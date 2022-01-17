@@ -1,0 +1,138 @@
+:root {
+    --hue-neutral: #f1dfe5; 
+    --hue-wrong: #e7618b;
+    --hue-correct: #40ffe6;; 
+    --teal :#41B3A3;
+    --salmon: #C38D9E;
+    --lightteal: #90e0d6;
+    --lightorange: #E8A87C; 
+    --pink: #ffc0cb; 
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+header {
+    padding: 40px;
+    text-align: center;
+    background: var(--teal);
+    color: #fff;
+    border-bottom:30px #879274;
+  }
+
+body {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+    background-color: var(--lightteal); 
+    color: #fff; 
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: flex-start;
+}
+
+
+.container {
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-top: 100px;
+    margin: auto;
+    height: 400px;
+    width: 800px;
+    max-width: 80%;
+    padding: 10px;
+    background-color: var(--salmon);
+    border-radius: 5px;
+    box-shadow: 0 0 10px 2px;
+    color: #ffff;
+    border: solid 3px white;
+}
+
+.btn-grid {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.btn {
+    border: 1px solid, 100%, 30%;
+    background-color: var(--lightorange);  
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.btn:hover {
+    border-color: #ffff;
+}
+
+.btn.correct {
+    background-color: var(--hue-correct);
+}
+
+.btn.wrong {
+    background-color: var(--hue-wrong);
+}
+
+.start-btn, .next-btn {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hide {
+    display: none; 
+}
+
+
+.headline {
+    list-style-type: none;
+    text-align: right;
+}
+
+.headline li {
+    display: inline-block;
+    padding:20px;
+    font-size: 30px;
+}
+
+.scoreboard {
+    text-decoration: none;
+    color: #ffff;
+}
+
+.scoreboard:hover {
+    color: var(--lightorange);
+}
+
+/* unused code ... 
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section {
+    flex: 0 auto;
+    padding: 8px;
+    margin-top: 50px;
+    background-color: rgb(223, 19, 19);
+    border-radius: 8px;
+}
+
+.body.correct {
+    background-color: var(--hue-nuetral);
+}
+
+.body.wrong {
+    --hue: var(--hue-wrong);
+}
