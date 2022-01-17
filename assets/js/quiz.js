@@ -12,13 +12,6 @@ const answerButtonsElement = document.getElementById('answer-buttons')
 
 let shuffledQuestions, currentQuestionIndex // shuffles questions and which one will be our current questions
 
-
-// scores
-
-
-//end scores
-
-// timer -- need to get it to stop at zero and pop up window to enter initials
 const startingMinutes = 1;
 let time = startingMinutes *60;
 
