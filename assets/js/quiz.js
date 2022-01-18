@@ -1,9 +1,3 @@
-// still to dos... 
-// stop timer + create pop up window to enter initials at end (window.prompt('Enter your initials', 'initials here');)
-// keep track of wins/losses  
-// lessen timer by 5 seconds with each wrong answer 
-
-
 const startButton = document.getElementById('start-btn') // selecting start button from HTML ID tag
 const nextButton = document.getElementById('next-btn') 
 const questionContainerElement = document.getElementById('question-container')
@@ -12,11 +6,12 @@ const answerButtonsElement = document.getElementById('answer-buttons')
 
 let shuffledQuestions, currentQuestionIndex // shuffles questions and which one will be our current questions
 
+//timer 
+
 const startingMinutes = 1;
 let time = startingMinutes *60;
 
 const countdownEl = document.getElementById('timer');
-
 
 function updateCountdown() {
     const minutes = Math.floor(time / 60);
@@ -39,6 +34,7 @@ function myStopFunction() {
 }
 // end timer 
 
+// start game 
 
 startButton.addEventListener('click', startGame) // adding event to start button which we will list instructions for in StartGame Function
 nextButton.addEventListener('click', () => {
@@ -55,6 +51,9 @@ function startGame() {
   questionContainerElement.classList.remove('hide') // this then removes the hide from the Questions - causing them to show 
   setNextQuestion()
 }
+
+
+// next question 
 
 function setNextQuestion() {
   resetState()
@@ -119,6 +118,8 @@ function clearStatusClass(element) {
   element.classList.remove('wrong')
 }
 
+// questions 
+
 const questions = [
     
   {
@@ -175,7 +176,7 @@ const questions = [
 
 
 
-
+// timer that did not work 
 /*
 
 
